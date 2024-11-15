@@ -29,13 +29,10 @@ print(df)
 
 df = df.reset_index()
 import matplotlib.pyplot as plt
-print ("beep")
 plt.plot(df['timestamp'], df['value'], label='Original Data')
 plt.plot(df['timestamp'], df['hopping_mean'], label='Hopping Mean')
-print ("beep")
 
 plt.legend()
 plt.draw()
 plt.show()
-print ("beep")
 
